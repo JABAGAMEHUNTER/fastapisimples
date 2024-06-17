@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "fast-api-lms"
-version = "0.1.0"
-description = ""
-authors = ["Gwendolyn Faraday <gwenfaraday@pm.me>"]
+name = "API FastAPI simples"
+version = "0.1.1"
+description = "Uma API isimples usando FastAPI"
+authors = ["Juda Vidal <jmatheo71@gmail.com"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
