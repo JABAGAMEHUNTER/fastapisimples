@@ -19,15 +19,15 @@ Este sistema permite gerenciar alunos de cursos, no quais professores podem chec
 - Professores podem criar cursos com sessoes e blocos de conteudo para cada sessao.
 - Professores podem associar cursos a estudantes.
 - Estudantes podem interagir com os seus cursos em uma lista.
-- Students can see the sections and content blocks for individual courses that they are taking.
-- Students are able to see their progress for each course.
+- Estudantes podem ver as seessoes e blocos de conteudo de cursos individuais que estao estudando.
+- Estudantes podem ver seu progresso para cada curso.
 
-## Running the App Locally
+## Executando
 
-1. Make sure Python, Poetry, and Postgres are installed. Postgres must be running. *If you need help with this, please follow the instructions in the video linked at the top of this README.*
-2. Create a virtual environment: `python -m venv venv`
-3. Install packages: `poetry install`
-4. Run the development server: `uvicorn main:app --reload`
+1. Assegure-se deu que Python, Poetry e Postgres estao instalados. Processo do Postgres deve estar funcionando.
+2. Crie o ambiente virtual: `python -m venv venv`
+3. Instale os pacotes: `poetry install`
+4. Execute o server de desenvolvimento: `uvicorn main:app --reload`
 
 ## Tech Stack
 
@@ -80,7 +80,7 @@ Este sistema permite gerenciar alunos de cursos, no quais professores podem chec
 
 **StudentCourse**
 
-*This model is used for teachers to assign courses to students. The 'completed' boolean is False until the student has completed the whole course.*
+*Este modelo sera usado para associar cursos a estudantes. O booleano 'completed' fica False ate o estudante completar o curso inteiro.*
 
 - student_id
 - course_id
@@ -88,7 +88,7 @@ Este sistema permite gerenciar alunos de cursos, no quais professores podem chec
 
 **CompletedContentBlock**
 
-*Every time the student completes a content block, a row is created in this table. The teacher can then go and edit this information when they grade the content block and provide feedback.*
+*Toda hora que um estudante completa um bloco de conteudo, uma linha sera criada nesta tabela. O professor pode editar esta informacao para darnota e feedback.*
 
 - student_id
 - content_block_id
